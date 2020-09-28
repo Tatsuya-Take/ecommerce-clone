@@ -4,9 +4,7 @@ import { useStateValue } from '../StateProvider';
 import { Divider } from '@material-ui/core';
 
 function Product({id, title, image, price, rating}) {
-  const [{basket}, dispatch] = useStateValue();
-
-  console.log(basket)
+  const [{}, dispatch] = useStateValue();
   
   const addToBasket = () => {
     dispatch({
